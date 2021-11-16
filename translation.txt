@@ -1,0 +1,165 @@
+
+//Section: Navbar
+id="nav-item-about"
+string: 'Sobre nós'
+
+
+id="nav-item-services"
+string: 'Serviços'
+
+
+id="nav-item-products"
+string: 'Produto'
+
+
+id="nav-item-contact"
+string: 'Contato'
+
+
+//Section: Main panel
+
+id="header-main-text"
+string: 
+'Especialista em atender <br />
+suas necessidades de TI'
+
+
+//Section: Sobre nós
+
+id="body-title-about-us"
+string: 'Sobre Nós'
+
+
+id="body-text-about-us"
+string: 
+'
+Com ampla experiência em setores de telecomunicações,
+financeiro, serviços e governamental, a ACDCIT busca
+constantemente superar as expectativas de seus clientes, criando
+de soluções únicas, que aumentem a produtividade e eficiência,
+elevando a qualidade, reduzindo os riscos e otimizando custos.
+<br /><br />
+Possuímos profissionais altamente qualificados e de alta
+performance, o que nos proporciona a capacidade de realizar um
+atendimento rápido, preciso e com ótimos resultados.
+'
+
+
+//Section: Skills
+
+id="body-skills-text"
+string:
+'Com experiencia de mercado em soluções críticas e de <br>
+alta disponibilidade temos a solução ideal para sua empresa.'
+
+
+//Section: Serviços
+
+id="body-title-services"
+string: 'Serviços'
+
+
+id="body-title-services-consulting"
+string: "Consultoria"
+
+
+id="body-text-services-consulting"
+string: 
+'Especialistas em consultoria para transformação de processos
+para empresas de todos os setores'
+
+
+id="body-title-services-outsourcing"
+string: 'Outsourcing'
+
+
+id="body-text-services-outsourcing"
+string: 
+'Baseada na experiência de clientes, desenvolvemos uma
+metodologia própria nos tornando uma das melhores empresas no
+mercado de outsourcing.'
+
+
+//Section: Produtos
+
+id="body-title-product"
+string: 'Produto'
+
+
+id="body-text-product"
+string: 
+'Agendador de tarefas dinâmico para orquestrar seus serviços.
+<br />
+Adicione inteligência em seu negócio.'
+
+
+//Section: Contact
+
+id="contact-title"
+string: "Contato"
+
+
+id="contact-phone"
+string: "Telefone / Whatsapp:"
+
+
+id="contact-email"
+string: "E-mail"
+
+
+//Section: Form
+
+id="form-control-name"
+string:
+'
+<input
+id="form_name"
+class="form-control"
+type="text"
+name="name"
+placeholder="Nome *"
+required="required"
+data-error="Nome é requerido"
+/>
+'
+
+
+id="form-control-email"
+string:
+'
+ <input
+id="form_email"
+class="form-control"
+type="email"
+name="email"
+placeholder="Email *"
+required="required"
+data-error="Necessário um e-mail válido"
+/>
+'
+
+
+id="form-control-subject"
+string:
+'
+<input
+id="form_subject"
+class="form-control"
+type="text"
+name="subject"
+placeholder="Assunto"
+/>
+'
+
+id="form-control-message"
+string: 
+'
+ <textarea
+id="form_message"
+name="text"
+class="form-control"
+placeholder="Digite sua mensagem aqui..."
+required="required"
+data-error="Deixe sua mensagem"
+></textarea>
+'
