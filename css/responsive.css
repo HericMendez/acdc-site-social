@@ -5,7 +5,7 @@
 /* -------------------------------------------------------
                      phone & tablet
 -------------------------------------------------------- */
-@media (max-width: 480px) {
+@media (max-width: 300px) {
 
   .filtering { border: none !important; }
 
@@ -22,7 +22,7 @@
 
 }
 
-@media (max-width: 767px) {
+@media (max-width: 500px) {
 
     .xs-mb-30{margin-bottom: 30px;}
 
@@ -78,7 +78,7 @@
 
 }
 
-@media (max-width: 991px){
+@media (max-width: 700px){
 
   .sm-mb-30{margin-bottom: 30px;}
 
