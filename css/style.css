@@ -52,7 +52,7 @@ body {
   color: #181818;
   font-family: "Poppins", sans-serif;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 18px;
 }
 
 .lista {
@@ -1285,12 +1285,14 @@ a.btn-light:hover:after {
 .footer .cop {
   width: 100%;
   padding-top: 30px;
+  
 }
 .footer .cop h6 {
-  color: #999;
-  font-size: 14px;
+  color: white;
+  font-size: 18px;
   font-weight: 400;
   letter-spacing: 2px;
+  display: inline-flex;
 }
 
 /* -------------------------------------------------------
@@ -1716,11 +1718,16 @@ a.btn-light:hover:after {
 .vantagens{
   text-align: center;
   padding-top: 15px !important;
-  font-size: 18px;
+  font-size: 22px;
 }
 
 .img1{
 
   align-self: baseline;
   top: 100px !important;
+}
+
+.logo-footer{
+  width: 100px !important;
+
 }

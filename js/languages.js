@@ -53,7 +53,7 @@ const languages = {
 
     contact: {
       title: "Contato",
-      phone: "Telefone / Whatsapp:",
+      phone: "Linkedin",
       email: "E-mail",
     },
 
@@ -85,7 +85,7 @@ const languages = {
     },
 
     header: {
-      text: "Specialist in meeting your IT needs",
+      text: "Our expertise is to exceed your expectations",
     },
 
     body: {
@@ -125,7 +125,7 @@ const languages = {
 
     contact: {
       title: "Get in Touch",
-      phone: "Phone/Whatsapp",
+      phone: "Linkedin",
       email: "E-mail",
     },
 
