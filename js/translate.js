@@ -53,9 +53,9 @@ const textdata = {
       pt: "Serviços",
     },
 
-    benefits:{
-      en:"Benefits",
-      pt:"Vantagens"
+    benefits: {
+      en: "Benefits",
+      pt: "Vantagens",
     },
 
     s1title: {
@@ -75,36 +75,35 @@ const textdata = {
       pt: "Nossos arquitetos de sistemas desenham soluções adaptáveis, otimizam o trabalho dos designers e desenvolvedores, para que possam focar no desenvolvimento de aplicações com os melhores padrões para funcionamento e manutenção deste.",
     },
 
-    s1list_item1:{
-      en:"Business risk reduction;",
-      pt:""
+    s1list_item1: {
+      en: "Business risk reduction;",
+      pt: "Redução de riscos ao negócio;",
     },
 
-    s1list_item2:{
-      en:">Alignment of expectations between the company's sectors;",
-      pt:""
+    s1list_item2: {
+      en: "Alignment of expectations between the company's sectors;",
+      pt: "Alinhamento de expectativas entre os setores da empresa;",
     },
 
-    s1list_item3:{
-      en:"Construction of flexible and high-quality applications;",
-      pt:""
+    s1list_item3: {
+      en: "Construction of flexible and high-quality applications;",
+      pt: "Construção de aplicações flexíveis e de qualidade;",
     },
 
-    s1list_item4:{
-      en:"Integration with different languages ans systems;",
-      pt:""
+    s1list_item4: {
+      en: "Integration with different languages ans systems;",
+      pt: "Integração com diferentes linguagens e sistemas;",
     },
 
-    s1list_item5:{
-      en:"Application security.",
-      pt:""
+    s1list_item5: {
+      en: "Application security.",
+      pt: "Segurança das aplicações.",
     },
 
-    s2title:{
-      en:"Outsourcing",
-      pt:"Outsourcing"
+    s2title: {
+      en: "Outsourcing",
+      pt: "Outsourcing",
     },
-
 
     s2text_p1: {
       en: "We offer the ideal conditions to unburden organizations, allowing the directioning of the central focus towards the strategic business actions that really matter.",
@@ -116,23 +115,26 @@ const textdata = {
       pt: "Nosso serviços de Outsourcing de TI também respondem à necessidade de reduzir custos da captação e manutenção de um time altamente qualificado.",
     },
 
-
-
-    s2list_item1:{
-      en:"Precise management of the amount of work in progress;",
-      pt:"Gerenciamento preciso da quantidade de trabalho em andamento;"
+    s2list_item1: {
+      en: "Precise management of the amount of work in progress;",
+      pt: "Gerenciamento preciso da quantidade de trabalho em andamento;",
     },
 
-    s2list_item2:{
-      en:"Availability of professionals with differentiated skills;",
-      pt:"Disponibilidade de profissionais com capacidades diferenciada;"
+    s2list_item2: {
+      en: "Availability of professionals with differentiated skills;",
+      pt: "Disponibilidade de profissionais com capacidades diferenciada;",
     },
 
-    s2list_item3:{
-      en:"Guaranteed access to technologies.",
-      pt:"Acesso garantido a tecnologias."
+    s2list_item3: {
+      en: "Guaranteed access to technologies.",
+      pt: "Acesso garantido a tecnologias.",
     },
   },
+
+  contact:{
+    en:"Get in Touch",
+    pt:"Contato"
+  }
 };
 
 function translate(lang) {
@@ -156,6 +158,8 @@ function translate(lang) {
   $("#s1list-item1").text(textdata["services"]["s1list_item1"][lang]);
   $("#s1list-item2").text(textdata["services"]["s1list_item2"][lang]);
   $("#s1list-item3").text(textdata["services"]["s1list_item3"][lang]);
+  $("#s1list-item4").text(textdata["services"]["s1list_item4"][lang]);
+  $("#s1list-item5").text(textdata["services"]["s1list_item5"][lang]);
 
   $("#s2title").text(textdata["services"]["s2title"][lang]);
   $("#s2text-p1").text(textdata["services"]["s2text_p1"][lang]);
@@ -165,6 +169,26 @@ function translate(lang) {
   $("#s2list-item1").text(textdata["services"]["s2list_item1"][lang]);
   $("#s2list-item2").text(textdata["services"]["s2list_item2"][lang]);
   $("#s2list-item3").text(textdata["services"]["s2list_item3"][lang]);
+
+  $("#contact-title").text(textdata["contact"][lang]);
 }
 
-translate("en");
+let language = "en";
+
+translate(language);
+
+
+
+checkbox = document.getElementById('slider');
+
+checkbox.addEventListener('change', e => {
+  console.log(e.target.checked)
+
+    if(e.target.checked){
+        console.log(e.target.checked)
+        translate('en');
+    }else{
+      translate("pt");
+    }
+
+});
