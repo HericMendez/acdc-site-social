@@ -179,7 +179,7 @@ translate(language);
 
 
 
-checkbox = document.getElementById('slider');
+checkbox = document.getElementById('langToggler');
 
 checkbox.addEventListener('change', e => {
   console.log(e.target.checked)

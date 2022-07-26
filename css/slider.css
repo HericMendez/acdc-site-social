@@ -10,8 +10,8 @@
   display: none;
 }
 
-.slider {
-  background-color: #ccc;
+.theme-slider, .lang-slider {
+  background-color: #000;
   bottom: 0;
   cursor: pointer;
   left: 0;
@@ -21,31 +21,64 @@
   transition: 0.4s;
 }
 
-.slider:before {
-  background-color: #fff;
-  bottom: 4px;
+.theme-slider:before {
+  background: url(../img//icons/theme-moon.svg);
+
   content: "";
-  height: 26px;
-  left: 4px;
+  height: 36px;
+
   position: absolute;
   transition: 0.4s;
-  width: 26px;
+  width: 36px;
 }
 
-input:checked + .slider {
-  background-color: #66bb6a;
+
+
+input:checked + .theme-slider {
+  background-color: var(--primary);
 }
 
-input:checked + .slider:before {
+
+
+input:checked + .theme-slider:before {
   transform: translateX(26px);
+  background: url(../img//icons/theme-sun.svg);
 }
 
-.slider.round {
+.theme-slider.round, .lang-slider.round {
   border-radius: 34px;
 }
 
-.slider.round:before {
+.theme-slider.round:before, .lang-slider.round:before {
   border-radius: 50%;
 }
 
-/* general styling */
+.lang-slider{
+
+  background-color: var(--primary);
+}
+input:checked + .lang-slider {
+  background-color: var(--primary);;
+}
+
+input:checked + .lang-slider:before {
+  transform: translateX(26px);
+  background: url(../img//icons/eua-32x32.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+
+.lang-slider:before {
+  background: url(../img//icons/brasil-32x32.png);
+
+  content: "";
+  height: 36px;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  position: absolute;
+  transition: 0.4s;
+  width: 36px;
+}
+

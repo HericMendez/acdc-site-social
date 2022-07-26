@@ -1,0 +1,24 @@
+:root {
+  --title: #151515;
+  --subtext: #777777;
+  --text: #434343;
+  --primary: #1957f3;
+  --bg-color: #f7f7f7;
+  --secondary: #ccc;
+}
+
+/*
+  --mainColor: #1957f3;
+  --darkColor: #252a34;
+  --borderColor: #f1f1f1;
+  --backgroudColor: #f7f7f7;
+
+  :root {
+  --mainColor: #1957f3;
+  --darkColor: #252a34;
+  --borderColor: #f1f1f1;
+  --backgroundColor: #f7f7f7;
+  }
+  
+  
+  */

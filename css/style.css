@@ -34,6 +34,15 @@
 /* ----------------------------------------------------------------
      [ 01 default Style ]
 -----------------------------------------------------------------*/
+:root {
+  --title: #151515;
+  --subtext: #777777;
+  --text: #434343;
+  --primary: #1957f3;
+  --bg-color: #222;
+  --secondary: #ccc;
+}
+
 * {
   -webkit-box-sizing: border-box;
   -o-box-sizing: border-box;
@@ -48,8 +57,8 @@
 
 body {
   overflow-x: hidden;
-  background-color: #fff;
-  color: #181818;
+  background-color: var(--bg-color);
+  color: var(--text);
   font-family: "Poppins", sans-serif;
   font-weight: 400;
   font-size: 18px;
@@ -57,7 +66,7 @@ body {
 
 .lista {
   padding-bottom: 1rem;
-  color: #777777;
+  color: var(--text);
   list-style: disc;
 }
 
@@ -67,7 +76,7 @@ li {
 
 p {
   line-height: 1.6;
-  color: #777;
+  color: var(--text);
   margin: 0;
 }
 
@@ -87,7 +96,7 @@ h2,
 h3,
 h4 {
   font-family: "Raleway", sans-serif;
-  color: #151515;
+  color: var(--title);
 }
 
 h4{
@@ -489,9 +498,7 @@ a.btn-light:hover:after {
   font-size: 24px;
   font-weight: 600;
 }
-.about .part-text p {
-  border-bottom: 1px solid #f1f1f1;
-}
+
 .about .part-text .info li {
   width: 48%;
   display: inline-block;

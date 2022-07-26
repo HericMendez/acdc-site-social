@@ -1,4 +1,3 @@
-
 /*-----------------------------------------------------------------
   [Master Stylesheet]
 
@@ -34,10 +33,10 @@
 ---------------------------------------------------------------- */
 
 /** Template Color **/
-$mainColor : #1957f3;
-$darkColor : #252A34;
-$borderColor : #f1f1f1;
-$backgroudColore : #f7f7f7;
+$mainColor: #1957f3;
+$darkColor: #252a34;
+$borderColor: #f1f1f1;
+$backgroudColore: #f7f7f7;
 
 /* ----------------------------------------------------------------
      [ 01 default Style ]
@@ -54,26 +53,27 @@ $backgroudColore : #f7f7f7;
   padding: 0;
 }
 
-body{
+body {
   overflow-x: hidden;
   background-color: #fff;
   color: #181818;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: 400;
   font-size: 14px;
 }
 
-p{
-	line-height: 1.6;
+p {
+  line-height: 1.6;
   color: #777;
   margin: 0;
 }
 
-span, a {
+span,
+a {
   display: inline-block;
 }
 
-img{
+img {
   max-width: 100%;
   height: auto;
   vertical-align: middle;
@@ -83,29 +83,31 @@ h1,
 h2,
 h3,
 h4,
- {
-  font-family: 'Raleway', sans-serif;
+h5 {
+  font-family: "Raleway", sans-serif;
   color: #151515;
 }
 
-button.btn, a.btn {
+button.btn,
+a.btn {
   position: relative;
   background-color: $mainColor;
   border: 1px solid $mainColor;
   padding: 15px 20px;
-  box-shadow: 0px 4px 38px -6px rgba(0,0,0,0.1);
+  box-shadow: 0px 4px 38px -6px rgba(0, 0, 0, 0.1);
   letter-spacing: 1px;
   border-radius: 3px;
   color: #fff;
   font-size: 14px;
-  transition: all .5s ease;
+  transition: all 0.5s ease;
 
   span {
     display: inline-block;
     position: relative;
     border-radius: 3px;
     z-index: 1;
-    transition: transform 0.45s cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 0.45s cubic-bezier(0.4, 0, 0.2, 1);
+    transition: transform 0.45s cubic-bezier(0.4, 0, 0.2, 1),
+      -webkit-transform 0.45s cubic-bezier(0.4, 0, 0.2, 1);
     transform: translateX(0);
   }
 
@@ -121,7 +123,8 @@ button.btn, a.btn {
     border-radius: 3px;
     transform: scaleX(0);
     transform-origin: center left;
-    transition: transform 0.45s cubic-bezier(0.4, 0, 0.2, 1) 0.075s, -webkit-transform 0.45s cubic-bezier(0.4, 0, 0.2, 1) 0.075s;
+    transition: transform 0.45s cubic-bezier(0.4, 0, 0.2, 1) 0.075s,
+      -webkit-transform 0.45s cubic-bezier(0.4, 0, 0.2, 1) 0.075s;
   }
 
   &:hover {
@@ -143,7 +146,8 @@ button.btn, a.btn {
   }
 }
 
-button.btn-light, a.btn-light {
+button.btn-light,
+a.btn-light {
   background-color: transparent;
   border: 1px solid $mainColor;
   color: #000;
@@ -153,7 +157,6 @@ button.btn-light, a.btn-light {
   }
 
   &:hover {
-
     span {
       color: #fff;
       transform: translateX(0.5rem);
@@ -171,7 +174,7 @@ button.btn-light, a.btn-light {
 
 @mixin overlays($count: 0) {
   [data-overlay]:before {
-    content: '';
+    content: "";
     position: absolute;
     background: #000;
     width: 100%;
@@ -259,14 +262,14 @@ button.btn-light, a.btn-light {
 
     &:after {
       position: absolute;
-      content: '';
+      content: "";
       display: block;
       height: 30px;
       width: 1px;
       bottom: -30px;
       left: 50%;
       background-color: $mainColor;
-      transform: translate(-50% ,0);
+      transform: translate(-50%, 0);
     }
   }
 }
@@ -325,17 +328,16 @@ button.btn-light, a.btn-light {
   }
 }
 
-.nav-scroll{
+.nav-scroll {
   background: #fff;
   box-shadow: 0 1px 8px 3px rgba(0, 0, 0, 0.050980392156862744);
-  transition: all .4s ease;
+  transition: all 0.4s ease;
 
-  .navbar-nav>li>a{
+  .navbar-nav > li > a {
     color: #333;
   }
 
-  .navbar-brand{
-
+  .navbar-brand {
     img {
       width: 110px;
       transform: scale(1.03) !important;
@@ -378,7 +380,7 @@ button.btn-light, a.btn-light {
       text-align: center;
       font-weight: bold;
       font-size: 70px;
-      color: #FFFFFF;
+      color: #ffffff;
       letter-spacing: -1px;
     }
 
@@ -387,7 +389,6 @@ button.btn-light, a.btn-light {
       color: #fff;
       line-height: 32px;
       opacity: 0.7;
-
     }
 
     .scoial-icon {
@@ -400,9 +401,9 @@ button.btn-light, a.btn-light {
         height: 40px;
         line-height: 40px;
         border-radius: 50%;
-        text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+        text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
         font-size: 16px;
-        transition: all .5s;
+        transition: all 0.5s;
 
         &:hover {
           color: $mainColor;
@@ -431,25 +432,24 @@ button.btn-light, a.btn-light {
     }
 
     .info {
-
       li {
         width: 48%;
         display: inline-block;
         margin-bottom: 15px;
 
         .title {
-            display: inline-block;
-            font-weight: 600;
-            padding-right: 5px;
+          display: inline-block;
+          font-weight: 600;
+          padding-right: 5px;
 
-            &:after {
-              content: ':';
-              padding-left: 5px;
-            }
+          &:after {
+            content: ":";
+            padding-left: 5px;
+          }
         }
 
         .value {
-            display: inline-block;
+          display: inline-block;
         }
       }
     }
@@ -532,63 +532,63 @@ button.btn-light, a.btn-light {
   position: relative;
 
   .box {
-  	position: relative;
-  	padding: 50px;
+    position: relative;
+    padding: 50px;
     height: 100%;
-  	overflow: hidden;
+    overflow: hidden;
 
-  	&:hover {
-  		.box-title {
-  			&:before {
-	    	    transform-origin: left center;
-  	    		transform: translate3d(100%, 0, 0) scale3d(2, 1, 1);
-  		    }
+    &:hover {
+      .box-title {
+        &:before {
+          transform-origin: left center;
+          transform: translate3d(100%, 0, 0) scale3d(2, 1, 1);
+        }
 
-  		    &:after {
-	    	    transform-origin: left center;
-  	    		transition-delay: 0.1s;
-  	    		transform: translate3d(0, 0, 0) scale3d(1, 1, 1);
-  		    }
-  		}
-
-  	}
+        &:after {
+          transform-origin: left center;
+          transition-delay: 0.1s;
+          transform: translate3d(0, 0, 0) scale3d(1, 1, 1);
+        }
+      }
+    }
   }
 
   .box-title {
-  	position: relative;
+    position: relative;
     margin-top: 10px;
     margin-bottom: 15px;
     padding-bottom: 8px;
     font-size: 16px;
     font-weight: 600;
-  	overflow: hidden;
+    overflow: hidden;
 
-  	&:after , &:before {
-  		content: '';
-	    display: inline-block;
-	    width: 100%;
-	    height: 2px;
-	    position: absolute;
-	    bottom: 0;
-	    left: 0;
-	    transform-origin: left center;
-	    background-color: rgba(91,52,255,0.2);
-	    transition: transform 0.65s cubic-bezier(0.7, 0, 0.2, 1);
-  	}
+    &:after,
+    &:before {
+      content: "";
+      display: inline-block;
+      width: 100%;
+      height: 2px;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      transform-origin: left center;
+      background-color: rgba(91, 52, 255, 0.2);
+      transition: transform 0.65s cubic-bezier(0.7, 0, 0.2, 1);
+    }
 
-  	&:before {
-  	    transform: scale3d(0.13, 1, 1);
-  	}
+    &:before {
+      transform: scale3d(0.13, 1, 1);
+    }
 
-  	&:after {
-  		transform: translate3d(-10px, 0, 0) scale3d(0, 1, 1);
-  	}
+    &:after {
+      transform: translate3d(-10px, 0, 0) scale3d(0, 1, 1);
+    }
   }
 
   .services-box {
     position: relative;
     border: 1px solid #fafafa;
-    transition: all .5s;
+    transition: all 0.5s;
 
     .icon {
       position: relative;
@@ -607,7 +607,6 @@ button.btn-light, a.btn-light {
       }
     }
 
-
     &:after {
       content: "";
       width: 0;
@@ -621,10 +620,9 @@ button.btn-light, a.btn-light {
     }
 
     &:hover {
-        -webkit-box-shadow: -1px 3px 10px 0 rgba(0, 0, 0, 0.06);
-        box-shadow: -1px 3px 10px 0 rgba(0, 0, 0, 0.06);
+      -webkit-box-shadow: -1px 3px 10px 0 rgba(0, 0, 0, 0.06);
+      box-shadow: -1px 3px 10px 0 rgba(0, 0, 0, 0.06);
     }
-
   }
 }
 
@@ -642,7 +640,8 @@ button.btn-light, a.btn-light {
     font-weight: 800;
   }
 
-  button.btn, a.btn {
+  button.btn,
+  a.btn {
     background-color: rgba(63, 71, 71, 0.38);
     border: 1px solid rgba(0, 0, 0, 0.28);
   }
@@ -650,15 +649,15 @@ button.btn-light, a.btn-light {
 /* -------------------------------------------------------
                    08 - portfolio
 -------------------------------------------------------- */
-.portfolio{
-  overflow: hidden ;
+.portfolio {
+  overflow: hidden;
 
-  .filtering{
+  .filtering {
     border-radius: 28px;
     margin: 0 auto;
     border: 1px dotted #e1e1e1;
 
-    button{
+    button {
       position: relative;
       top: -1px;
       font-size: 14px;
@@ -667,10 +666,10 @@ button.btn-light, a.btn-light {
       letter-spacing: 2px;
       color: #777;
       cursor: pointer;
-      transition: all .3s;
+      transition: all 0.3s;
     }
 
-    .active{
+    .active {
       background-color: $mainColor;
       color: #fff;
       border-radius: 28px;
@@ -679,7 +678,6 @@ button.btn-light, a.btn-light {
   }
 
   .gallery {
-
     .item-img {
       position: relative;
       overflow: hidden;
@@ -696,7 +694,7 @@ button.btn-light, a.btn-light {
 
         img {
           width: 100%;
-          transition: all .3s;
+          transition: all 0.3s;
         }
 
         .overlay-img {
@@ -707,24 +705,24 @@ button.btn-light, a.btn-light {
           overflow: hidden;
 
           &:after {
-            content: '';
+            content: "";
             position: absolute;
             left: -100%;
             top: 0;
             width: 100%;
             height: 50%;
-            background: rgba(0, 0, 0, .8);
+            background: rgba(0, 0, 0, 0.8);
             transition: all 150ms ease-in-out 200ms;
           }
 
           &:before {
-            content: '';
+            content: "";
             position: absolute;
             right: -100%;
             bottom: 0;
             width: 100%;
             height: 50%;
-            background: rgba(0, 0, 0, .8);
+            background: rgba(0, 0, 0, 0.8);
             transition: all 150ms ease-in-out 200ms;
           }
 
@@ -746,7 +744,7 @@ button.btn-light, a.btn-light {
             padding: 0 10px;
 
             &:before {
-              content:'';
+              content: "";
               background: #fff;
               bottom: 0;
               position: absolute;
@@ -770,7 +768,7 @@ button.btn-light, a.btn-light {
             padding: 0 10px;
 
             &::before {
-              content:'';
+              content: "";
               background: #fff;
               bottom: 0;
               right: auto;
@@ -785,16 +783,14 @@ button.btn-light, a.btn-light {
       }
 
       &:hover {
-
         img {
           transform: scale(1.04);
         }
 
         .overlay-img {
-
           &:after {
             left: 0;
-            transition: all .8s;
+            transition: all 0.8s;
             opacity: 1;
           }
 
@@ -802,7 +798,7 @@ button.btn-light, a.btn-light {
             right: 0;
             width: 100%;
             height: 50%;
-            transition: all .8s;
+            transition: all 0.8s;
             opacity: 1;
           }
 
@@ -842,7 +838,12 @@ button.btn-light, a.btn-light {
   .testimonial-item {
     position: relative;
     text-align: center;
-    background: linear-gradient(to right, transparent, rgba(200, 200, 200, 0.1), transparent);
+    background: linear-gradient(
+      to right,
+      transparent,
+      rgba(200, 200, 200, 0.1),
+      transparent
+    );
     padding: 30px;
 
     .icon {
@@ -901,8 +902,14 @@ button.btn-light, a.btn-light {
   }
 
   .owl-nav {
-    .owl-prev, .owl-next {
-      background: linear-gradient(to right, transparent, rgba(200, 200, 200, 0.1), transparent);
+    .owl-prev,
+    .owl-next {
+      background: linear-gradient(
+        to right,
+        transparent,
+        rgba(200, 200, 200, 0.1),
+        transparent
+      );
       width: 40px;
       height: 40px;
       line-height: 40px;
@@ -914,7 +921,6 @@ button.btn-light, a.btn-light {
       }
     }
   }
-
 }
 /* -------------------------------------------------------
                    10 - Blog
@@ -925,15 +931,15 @@ button.btn-light, a.btn-light {
   .blog-item {
     position: relative;
     border: 1px solid #fafafa;
-    transition: all .3s;
+    transition: all 0.3s;
 
     .part-img {
       position: relative;
       margin-bottom: 15px;
-      transition: all .3s;
+      transition: all 0.3s;
 
       img {
-        transition: all .3s;
+        transition: all 0.3s;
       }
 
       .post-info-category {
@@ -956,15 +962,15 @@ button.btn-light, a.btn-light {
 
       .title {
         margin-bottom: 20px;
-        transition: all .3s;
+        transition: all 0.3s;
         h4 {
           font-size: 16px;
           font-weight: 600;
-          transition: all .3s;
+          transition: all 0.3s;
 
           a {
             color: #000;
-            transition: all .3s;
+            transition: all 0.3s;
           }
 
           &:hover {
@@ -974,19 +980,19 @@ button.btn-light, a.btn-light {
           }
         }
 
-       li {
-            position: relative;
-            color: #333333;
-            padding: 0 10px;
-            font-size: 12px;
-            font-weight: 500;
-            padding-left: 0px;
-            margin-right: 10px;
-            display: inline-block;
+        li {
+          position: relative;
+          color: #333333;
+          padding: 0 10px;
+          font-size: 12px;
+          font-weight: 500;
+          padding-left: 0px;
+          margin-right: 10px;
+          display: inline-block;
         }
 
         li:nth-child(1) {
-            border-right: 1px solid rgba(0, 0, 0, 0.2);
+          border-right: 1px solid rgba(0, 0, 0, 0.2);
         }
       }
 
@@ -1027,7 +1033,7 @@ button.btn-light, a.btn-light {
     &:hover {
       .part-img {
         img {
-          opacity: .7;
+          opacity: 0.7;
         }
       }
 
@@ -1056,7 +1062,12 @@ button.btn-light, a.btn-light {
 
   .part-info {
     position: relative;
-    background: linear-gradient(to right, transparent, rgba(200, 200, 200, 0.3), transparent);
+    background: linear-gradient(
+      to right,
+      transparent,
+      rgba(200, 200, 200, 0.3),
+      transparent
+    );
     padding: 30px;
     margin-bottom: 50px;
 
@@ -1083,16 +1094,22 @@ button.btn-light, a.btn-light {
         margin-bottom: 10px;
       }
 
-      p, a {
+      p,
+      a {
         color: #fff;
-        opacity: .9;
+        opacity: 0.9;
       }
     }
   }
 
   .contact-form {
     position: relative;
-    background: linear-gradient(to right, transparent, rgba(200, 200, 200, 0.3), transparent);
+    background: linear-gradient(
+      to right,
+      transparent,
+      rgba(200, 200, 200, 0.3),
+      transparent
+    );
     padding: 30px;
 
     .help-block {
@@ -1102,7 +1119,8 @@ button.btn-light, a.btn-light {
       }
     }
 
-    input, textarea {
+    input,
+    textarea {
       color: #fff;
       background: transparent;
       padding: 10px 15px;
@@ -1121,22 +1139,23 @@ button.btn-light, a.btn-light {
     }
 
     ::placeholder {
-        color: #fff !important;
+      color: #fff !important;
     }
 
     ::-webkit-input-placeholder {
-        color: #fff !important;
+      color: #fff !important;
     }
 
     ::-ms-input-placeholder {
-        color: #fff !important;
+      color: #fff !important;
     }
 
     ::-webkit-input-placeholder {
-        color: #fff !important;
+      color: #fff !important;
     }
 
-    button.btn, a.btn {
+    button.btn,
+    a.btn {
       background-color: rgba(63, 71, 71, 0.38);
       border: 1px solid rgba(0, 0, 0, 0.28);
     }
@@ -1174,7 +1193,7 @@ button.btn-light, a.btn-light {
       border-radius: 50%;
       margin-right: 10px;
       background-color: #252525;
-      transition: all .5s ease;
+      transition: all 0.5s ease;
 
       i {
         color: #fff;
@@ -1206,8 +1225,7 @@ button.btn-light, a.btn-light {
                    13 - Demo-particles
 -------------------------------------------------------- */
 .particles-demo {
-
-  #particles-js{
+  #particles-js {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -1231,14 +1249,14 @@ button.btn-light, a.btn-light {
     margin: auto;
 
     a {
-      background-color:rgba(255,255,255,.1);
+      background-color: rgba(255, 255, 255, 0.1);
       padding: 12px 20px;
       text-align: center;
       border-radius: 24px;
       vertical-align: middle;
       font-size: 12px;
       color: #fff;
-      transition: all .5s;
+      transition: all 0.5s;
 
       &:hover {
         background-color: $mainColor;
@@ -1258,7 +1276,7 @@ button.btn-light, a.btn-light {
 
     .part-img {
       border-radius: 4px;
-      transition: all .5s;
+      transition: all 0.5s;
 
       img {
         border-radius: 4px;
@@ -1266,17 +1284,17 @@ button.btn-light, a.btn-light {
     }
 
     h4 {
-        font-size: 24px;
-        font-weight: 600;
-        position: absolute;
-        top: -60px;
-        left: -500px;
-        margin: 0px auto;
-        -webkit-transition: all 0.3s;
-        -moz-transition: all 0.3s;
-        -ms-transition: all 0.3s;
-        -o-transition: all 0.3s;
-        transition: all 0.3s;
+      font-size: 24px;
+      font-weight: 600;
+      position: absolute;
+      top: -60px;
+      left: -500px;
+      margin: 0px auto;
+      -webkit-transition: all 0.3s;
+      -moz-transition: all 0.3s;
+      -ms-transition: all 0.3s;
+      -o-transition: all 0.3s;
+      transition: all 0.3s;
     }
 
     &:hover {
@@ -1321,7 +1339,7 @@ button.btn-light, a.btn-light {
           color: inherit;
 
           &:hover {
-            opacity: .7;
+            opacity: 0.7;
           }
 
           span {
@@ -1358,7 +1376,7 @@ button.btn-light, a.btn-light {
       text-align: center;
       vertical-align: middle;
       text-transform: uppercase;
-      transition: all .3s;
+      transition: all 0.3s;
 
       &:hover {
         background-color: $mainColor;
@@ -1399,7 +1417,7 @@ button.btn-light, a.btn-light {
       border-radius: 5px;
       background-color: $mainColor;
       z-index: 4;
-      transition: all .3s ease-in-out;
+      transition: all 0.3s ease-in-out;
 
       a {
         color: inherit;
@@ -1419,12 +1437,12 @@ button.btn-light, a.btn-light {
         margin-bottom: 15px;
         letter-spacing: 1px;
 
-        span+span {
+        span + span {
           margin-left: 25px;
           a {
             color: inherit;
             &:hover {
-              opacity: .7;
+              opacity: 0.7;
             }
           }
         }
@@ -1450,20 +1468,20 @@ button.btn-light, a.btn-light {
       position: relative;
 
       span {
-          font-weight: 600;
-          display: block;
-          margin-bottom: 10px;
+        font-weight: 600;
+        display: block;
+        margin-bottom: 10px;
       }
 
       .customer.share {
-          color: #fff;
-          width: 35px;
-          height: 35px;
-          display: inline-block;
-          border-radius: 30px;
-          text-align: center;
-          line-height: 35px;
-          margin-right: 8px;
+        color: #fff;
+        width: 35px;
+        height: 35px;
+        display: inline-block;
+        border-radius: 30px;
+        text-align: center;
+        line-height: 35px;
+        margin-right: 8px;
       }
 
       .customer.share.facebook {
@@ -1512,7 +1530,8 @@ button.btn-light, a.btn-light {
       }
 
       form {
-        input, textarea {
+        input,
+        textarea {
           padding: 10px 15px;
           border-radius: 0;
           width: 100%;
@@ -1548,7 +1567,7 @@ button.btn-light, a.btn-light {
         margin-bottom: 30px;
 
         &:before {
-          content: '';
+          content: "";
           position: absolute;
           bottom: 0;
           margin-top: 10px;
@@ -1580,7 +1599,6 @@ button.btn-light, a.btn-light {
             border-radius: 12px;
             line-height: 21px;
           }
-
         }
 
         li:last-child {
@@ -1626,8 +1644,6 @@ button.btn-light, a.btn-light {
               line-height: 1;
             }
           }
-
-
         }
       }
 
@@ -1642,7 +1658,7 @@ button.btn-light, a.btn-light {
             display: inline-block;
             padding: 8px;
             margin: 0 6px 6px 0;
-            transition: all .3s;
+            transition: all 0.3s;
 
             &:hover {
               background-color: $mainColor;
