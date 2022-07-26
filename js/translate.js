@@ -131,10 +131,10 @@ const textdata = {
     },
   },
 
-  contact:{
-    en:"Get in Touch",
-    pt:"Contato"
-  }
+  contact: {
+    en: "Get in Touch",
+    pt: "Contato",
+  },
 };
 
 function translate(lang) {
@@ -173,37 +173,29 @@ function translate(lang) {
   $("#contact-title").text(textdata["contact"][lang]);
 }
 
-let language = "en";
 
-translate(language);
+window.onload = translate('pt')
+checkbox = document.getElementById("langToggler");
 
+checkbox.addEventListener("change", (e) => {
+  console.log(e.target.checked);
 
-
-checkbox = document.getElementById('langToggler');
-
-checkbox.addEventListener('change', e => {
-  console.log(e.target.checked)
-
-    if(e.target.checked){
-        console.log(e.target.checked)
-        translate('en');
-    }else{
-      translate("pt");
-    }
-
+  if (e.target.checked) {
+    console.log(e.target.checked);
+    translate("en");
+  } else {
+    translate("pt");
+  }
 });
 
+let checkboxMobile = document.getElementById("langToggler-mobile");
 
-let checkboxMobile = document.getElementById('langToggler-mobile');
+checkboxMobile.addEventListener("change", (e) => {
+  console.log(e.target.checked);
 
-checkboxMobile.addEventListener('change', e => {
-  console.log(e.target.checked)
-
-    if(e.target.checked){
-        console.log(e.target.checked)
-        translate('en');
-    }else{
-      translate("pt");
-    }
-
+  if (e.target.checked) {
+    translate("en");
+  } else {
+    translate("pt");
+  }
 });

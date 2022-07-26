@@ -37,6 +37,7 @@ const changeColors = (colors) => {
 };
 
 
+window.onload = changeColors(themes[1]);
 checkbox = document.getElementById("themeToggler");
 
 checkbox.addEventListener("change", (e) => {
