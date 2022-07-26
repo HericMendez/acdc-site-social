@@ -7,9 +7,6 @@ const getStyle = (element, style) =>
 
 const themes = [
   {
-    name: "Light",
-    src: "assets/img/icons/theme-sun.svg",
-
     primary: getStyle(html, "--primary"),
     secondary: getStyle(html, "--secondary"),
     bgColor: getStyle(html, "--bg-color"),
@@ -20,9 +17,6 @@ const themes = [
   },
 
   {
-    name: "Dark",
-    src: "assets/img/icons/theme-moon.svg",
-
     primary: "#0000ff",
     secondary: "#ccc",
     bgColor: "#222",
@@ -41,19 +35,7 @@ const changeColors = (colors) => {
     html.style.setProperty(transformKey(key), colors[key])
   );
 };
-/*
-let count = 0;
-btn.addEventListener("click", () => {
-  count++;
-  if (count >= themes.length) count = 0;
-  console.log(`Theme index ${count}: ${themes[count].name}`);
-  changeColors(themes[count]);
-  document.getElementById("theme-icon").src = themes[count].src;
-  document.getElementById("info-icon").src = themes[count].srcInfo;
-  //document.getElementById("theme-title").innerHTML = `${themes[count].name} Theme`
-  
-});
-*/
+
 
 checkbox = document.getElementById("themeToggler");
 
@@ -68,7 +50,7 @@ checkbox.addEventListener("change", (e) => {
 });
 
 
-let checkboxMobile = document.getElementById("themeToggler-mobile");
+checkboxMobile = document.getElementById("themeToggler-mobile");
 
 checkboxMobile.addEventListener("change", (e) => {
   console.log(e.target.checked);

@@ -105,3 +105,11 @@ input:checked + .lang-slider:before {
 
 }
 
+@media screen and (max-width: 991px){
+  .switch-box{
+    visibility: hidden;
+    display: none;
+  }
+
+  
+}
