@@ -192,3 +192,18 @@ checkbox.addEventListener('change', e => {
     }
 
 });
+
+
+let checkboxMobile = document.getElementById('langToggler-mobile');
+
+checkboxMobile.addEventListener('change', e => {
+  console.log(e.target.checked)
+
+    if(e.target.checked){
+        console.log(e.target.checked)
+        translate('en');
+    }else{
+      translate("pt");
+    }
+
+});

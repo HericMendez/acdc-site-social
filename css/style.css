@@ -340,6 +340,7 @@ a.btn-light:hover:after {
   background: transparent;
   z-index: 1030;
   text-transform: uppercase;
+  text-justify: center;
 }
 .navbar .active {
   color: #0072dc !important;
@@ -367,6 +368,7 @@ a.btn-light:hover:after {
 }
 .navbar .navbar-toggler {
   cursor: pointer;
+  margin-right: 16px;
 }
 .navbar .navbar-toggler span {
   color: #ffffff;

@@ -66,3 +66,17 @@ checkbox.addEventListener("change", (e) => {
     changeColors(themes[1]);
   }
 });
+
+
+let checkboxMobile = document.getElementById("themeToggler-mobile");
+
+checkboxMobile.addEventListener("change", (e) => {
+  console.log(e.target.checked);
+
+  if (e.target.checked) {
+    changeColors(themes[0]);
+  } else {
+    changeColors(themes[1]);
+  }
+});
+

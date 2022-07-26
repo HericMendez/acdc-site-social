@@ -4,6 +4,7 @@
   position: relative;
   width: 60px;
   top:22px;
+
 }
 
 .switch input {
@@ -80,5 +81,27 @@ input:checked + .lang-slider:before {
   position: absolute;
   transition: 0.4s;
   width: 36px;
+}
+
+
+@media (max-width: 991px){
+  .lang-slider:before, .theme-slider:before {
+
+    position: absolute;
+    transition: 0.4s;
+    width: 36px;
+    left: 0px;
+    padding: 12px;
+  }
+  
+}
+
+@media screen and (min-width: 991px){
+  .slider-mobile{
+    visibility: hidden;
+    display: none;
+  }
+
+
 }
 
